@@ -6,13 +6,13 @@
 </head>
 <body>
  <form action="/form_submission_url">
-     <label>name: <input type="text" name="name"></label> <br>
-     <label>dob: <input type="date" name="dob"></label> <br>
-     <label>phone: <input type="number" name="phone"></label> <br>
+     <label>name: <input type="text" name="name" required></label> <br>
+     <label>dob: <input type="date" name="dob" required></label> <br>
+     <label>phone: <input type="number" name="phone" required></label> <br>
 
-     <label>address: <textarea rows="3" name="address"></textarea></label> <br>
+     <label>address: <textarea rows="3" name="address" required></textarea></label> <br>
 
-     <label>Do you agree: <input type="checkbox" name="agree" checked></label> <br>
+     <label>Do you agree: <input type="checkbox" name="agree" checked required></label> <br>
 
      <br>
      <input type="submit">
