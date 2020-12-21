@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    [class*=one] {
+        color: red
+    }
+
+    .one {
+        color: blue;
+    }
+
+    [class$=one] {
+        color: red
+    }
+</style>
+<body>
+
+<div id="xflch-container">
+    <ul>
+        <li> List Item</li>
+        <li> List Item</li>
+        <li> List Item</li>
+    </ul>
+</div>
+
+<div id="xoch-container">
+    <div class="one">
+        <p> My paragraph here. </p>
+    </div>
+
+    <div class="one two">
+        <p> Two paragraphs total. </p>
+        <p> Two paragraphs total. </p>
+    </div>
+</div>
+
+<div id="xot-container">
+    <div class="two one">
+        <p> My paragraph here. </p>
+        <ul>
+            <li> List Item</li>
+            <li> List Item</li>
+        </ul>
+    </div>
+
+    <div class="three two">
+        <p> Two paragraphs total. </p>
+        <p> Two paragraphs total. </p>
+        <ul>
+            <li> List Item</li>
+        </ul>
+    </div>
+
+</div>
+
+<div id="xfot-container">
+    <div class="one">
+        <p> My paragraph here. </p>
+        <ul>
+            <li> List Item 1</li>
+            <li> List Item 2</li>
+        </ul>
+
+        <ul>
+            <li> List Item 3</li>
+            <li> List Item 4</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
