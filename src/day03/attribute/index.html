@@ -14,19 +14,23 @@
     {
         border: 1px solid blue;
     }
+
+    [about] {
+        background: red;
+    }
 </style>
 <body>
 
 <div id="xflch-container">
     <ul>
-        <li> List Item</li>
+        <li about="1"> List Item</li>
         <li> List Item</li>
         <li> List Item</li>
     </ul>
 </div>
 
 <div id="xoch-container">
-    <div class="one">
+    <div class="one" about="1">
         <p> My paragraph here. </p>
     </div>
 
@@ -38,7 +42,7 @@
 
 <div id="xot-container">
     <div class="two one">
-        <p> My paragraph here. </p>
+        <p about="1"> My paragraph here. </p>
         <ul>
             <li> List Item</li>
             <li> List Item</li>
