@@ -29,6 +29,7 @@ public class _02_FindingElement {
         System.out.println(startPracticing.getText());
         startPracticing.click();
 
+        System.out.println(driver.findElement(By.tagName("h3")).getText());
 //        driver.quit();
     }
 }
