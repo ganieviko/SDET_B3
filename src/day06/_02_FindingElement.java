@@ -30,6 +30,12 @@ public class _02_FindingElement {
         startPracticing.click();
 
         System.out.println(driver.findElement(By.tagName("h3")).getText());
+
+        String text = driver.findElement(By.cssSelector("#btn_basic_example")).getText();
+        System.out.println("BTN TEXT IS: " + text);
+
+        String text1 = driver.findElement(By.cssSelector(".head")).getText();
+        System.out.println("HEAD TEXT IS: " + text1);
 //        driver.quit();
     }
 }
