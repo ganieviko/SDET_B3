@@ -10,6 +10,8 @@ public class _02_FindingElement {
         WebDriver driver = new ChromeDriver();
         driver.get( "https://www.seleniumeasy.com/test/" );
 
+        driver.findElement(By.id("at-cv-lightbox-close")).click();
+
         WebElement button = driver.findElement(By.id("btn_basic_example"));
         String buttonText = button.getText();
         System.out.println(buttonText);
