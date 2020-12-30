@@ -14,6 +14,8 @@ public class _02_FindingElement {
         String buttonText = button.getText();
         System.out.println(buttonText);
 
-        driver.quit();
+        button.click();
+
+//        driver.quit();
     }
 }
