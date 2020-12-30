@@ -16,7 +16,10 @@ public class _02_FindingElement {
         String buttonText = button.getText();
         System.out.println(buttonText);
 
-        button.click();
+//        button.click();
+
+        String headText = driver.findElement(By.className("head")).getText();
+        System.out.println(headText);
 
 //        driver.quit();
     }
