@@ -13,8 +13,8 @@ public class _03_FindingElements {
         driver.get( "https://www.seleniumeasy.com/test/" );
 
         List<WebElement> liElements = driver.findElements(By.cssSelector("#treemenu li"));
-        for (WebElement li: liElements) {
-            System.out.println(li.getText());
+        for (WebElement element: liElements) {
+            System.out.println(element.getText());
         }
 //        driver.quit();
     }
