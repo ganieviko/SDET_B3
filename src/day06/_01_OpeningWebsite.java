@@ -9,6 +9,9 @@ public class _01_OpeningWebsite {
         System.setProperty("webdriver.chrome.driver", MyConstants.DRIVER_PATH);
         WebDriver driver = new ChromeDriver();
         driver.get( "https://techno.study/" );
+        //  write some code
+        // do some actions
 
+        driver.quit();
     }
 }
