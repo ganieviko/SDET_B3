@@ -12,7 +12,7 @@ public class _03_FindingElements {
         WebDriver driver = new ChromeDriver();
         driver.get( "https://www.seleniumeasy.com/test/" );
 
-        List<WebElement> liElements = driver.findElements(By.tagName("li"));
+        List<WebElement> liElements = driver.findElements(By.cssSelector("#treemenu li"));
         for (WebElement li: liElements) {
             System.out.println(li.getText());
         }
