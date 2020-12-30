@@ -21,6 +21,9 @@ public class _02_FindingElement {
         String headText = driver.findElement(By.className("head")).getText();
         System.out.println(headText);
 
+        WebElement element = driver.findElement(By.linkText("Input Forms"));
+        System.out.println(element.getText());
+        element.click();
 //        driver.quit();
     }
 }
