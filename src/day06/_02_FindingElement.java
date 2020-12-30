@@ -24,6 +24,11 @@ public class _02_FindingElement {
         WebElement element = driver.findElement(By.linkText("Input Forms"));
         System.out.println(element.getText());
         element.click();
+
+        WebElement startPracticing = driver.findElement(By.partialLinkText("Start Practising"));
+        System.out.println(startPracticing.getText());
+        startPracticing.click();
+
 //        driver.quit();
     }
 }
