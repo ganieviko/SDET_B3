@@ -12,7 +12,19 @@ public class _06_EnteringText {
 
         driver.findElement(By.id("at-cv-lightbox-close")).click();
 
+        String testString = "Test 123";
+
         WebElement inputElement = driver.findElement(By.id("user-message"));
-        inputElement.sendKeys("Test");
+        inputElement.sendKeys(testString);
+
+        driver.findElement(By.cssSelector("#get-input > button")).click();
+
+        String display = driver.findElement(By.id("display")).getText();
+
+        if(display.equals(testString)) {
+            System.out.println("Success");
+        } else {
+            System.out.println("Failure");
+        }
     }
 }
