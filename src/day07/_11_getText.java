@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class _10_isDisplayed {
+public class _11_getText {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", MyConstants.DRIVER_PATH);
         WebDriver driver = new ChromeDriver();
@@ -14,14 +14,14 @@ public class _10_isDisplayed {
 
         List<WebElement> loadingElements = driver.findElements(By.id("loading"));
         for (WebElement loadingElement: loadingElements) {
-            System.out.println("1 > " + loadingElement.isDisplayed());
+            System.out.println("1 > " + loadingElement.getText());
         }
 
         driver.findElement(By.cssSelector("#input-example > button")).click();
 
         loadingElements = driver.findElements(By.id("loading"));
         for (WebElement loadingElement: loadingElements) {
-            System.out.println("2 > " + loadingElement.isDisplayed());
+            System.out.println("2 > " + loadingElement.getText());
         }
 
         Thread.sleep(3000);
@@ -29,7 +29,7 @@ public class _10_isDisplayed {
 
         loadingElements = driver.findElements(By.id("loading"));
         for (WebElement loadingElement: loadingElements) {
-            System.out.println("3 > " + loadingElement.isDisplayed());
+            System.out.println("3 > " + loadingElement.getText());
         }
 
 //        driver.quit();
