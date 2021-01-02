@@ -12,7 +12,7 @@ public class _05_Clear {
 //        driver.findElement(By.id("at-cv-lightbox-close")).click();
         driver.findElement(By.id("user-message")).sendKeys("Hello");
 
-        Thread.sleep(5000); // wait for 2 seconds
+        Thread.sleep(5000); // wait for 5 seconds
 
         driver.findElement(By.id("user-message")).clear();
 
