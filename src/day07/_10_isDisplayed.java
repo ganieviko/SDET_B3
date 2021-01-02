@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class _10_isVisable {
+public class _10_isDisplayed {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", MyConstants.DRIVER_PATH);
         WebDriver driver = new ChromeDriver();
