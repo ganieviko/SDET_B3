@@ -11,7 +11,7 @@ public class _04_Submit {
 
 //        driver.findElement(By.id("at-cv-lightbox-close")).click();
         driver.findElement(By.id("user-message")).sendKeys("Hello");
-        driver.findElement(By.id("get-input")).submit();
+        driver.findElement(By.id("get-input")).submit(); // submits the form and refreshes the page
 
 //        driver.quit();
     }
