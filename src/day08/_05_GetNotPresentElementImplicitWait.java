@@ -18,6 +18,8 @@ public class _05_GetNotPresentElementImplicitWait {
         // if the element appears after 3 seconds, the 2 seconds will NOT be wasted
         // because the script will continue right away, after it found the element
 
+        // if the element is not found, it will not wait forever, it will wait just for 5 seconds only
+
         String finish = driver.findElement(By.id("finish")).getText();;
 
         System.out.println(finish);
