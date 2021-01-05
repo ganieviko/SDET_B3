@@ -17,9 +17,10 @@ public class _10_SelectByClicking {
 
         List<WebElement> options = driver.findElements(By.cssSelector("select[name=state] > option"));
 
-        for (int i = 1; i <= options.size(); i++) {
+        for (int i = 0; i < options.size(); i++) {
             if(options.get(i).getText().equals("Mississippi")) {
                 options.get(i).click();
+                break;
             }
         }
 
