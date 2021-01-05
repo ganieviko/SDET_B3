@@ -10,7 +10,7 @@ public class _03_GetNotPresentElementThreadSleep {
         driver.get( "http://the-internet.herokuapp.com/dynamic_loading/2" );
 
         driver.findElement(By.cssSelector("#start > button")).click();
-        Thread.sleep(5000);
+        Thread.sleep(5000); // if the element appears after 3 seconds, the 2 seconds will be wasted
 
         String finish = driver.findElement(By.id("finish")).getText();
         System.out.println(finish);
