@@ -14,6 +14,10 @@ public class _06_SetSizeOfWindow {
         Dimension d = driver.manage().window().getSize();
         System.out.println("Window width is " + d.width);
         System.out.println("Window height is " + d.height);
-        driver.quit();
+
+        Dimension dimension = new Dimension(1024, 768);
+        driver.manage().window().setSize(dimension);
+
+//        driver.quit();
     }
 }
