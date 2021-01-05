@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class _10_SelectBySelectClass {
+public class _11_SelectBySelectClass {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", MyConstants.DRIVER_PATH);
         WebDriver driver = new ChromeDriver();
