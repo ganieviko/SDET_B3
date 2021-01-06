@@ -17,7 +17,7 @@ public class Task2NotLoggedIn {
 
         WebDriverWait wait = new WebDriverWait(driver, 5);
         try {
-            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("svg[data-icon=\"bars\"]")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("svg[data-icon=\"bars\"]")));
             System.out.println("Logged in!");
         } catch (Exception e) {
             System.out.println("Not logged in!");
