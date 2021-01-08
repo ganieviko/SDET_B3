@@ -23,14 +23,16 @@ public class HomeworkSolutionPart1 {
             System.out.println("Not logged in!");
         }
 
-        String parentMenu = ".group-items > :nth-child(5)";
+        String parentMenu = ".group-items > :nth-child(6)";
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(parentMenu)));
         driver.findElement(By.cssSelector(parentMenu)).click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(parentMenu + " > .children > :nth-child(1)")));
-        driver.findElement(By.cssSelector(parentMenu + " > .children > :nth-child(1)")).click();
+        String secondLevelMenu = " > .children > :nth-child(1)";
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(parentMenu + secondLevelMenu)));
+        driver.findElement(By.cssSelector(parentMenu + secondLevelMenu)).click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(parentMenu + " > .children > :nth-child(1) > .children > :nth-child(1)")));
-        driver.findElement(By.cssSelector(parentMenu + " > .children > :nth-child(1) > .children > :nth-child(1)")).click();
+        String thirdLevelMenu = " > .children > :nth-child(3)";
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(parentMenu + secondLevelMenu + thirdLevelMenu)));
+        driver.findElement(By.cssSelector(parentMenu + secondLevelMenu + thirdLevelMenu)).click();
     }
 }
