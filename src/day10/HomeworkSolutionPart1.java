@@ -23,7 +23,7 @@ public class HomeworkSolutionPart1 {
             System.out.println("Not logged in!");
         }
 
-        String parentMenu = ".group-items > :nth-child(6)";
+        String parentMenu = ".group-items > :nth-child(1)";
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(parentMenu)));
         driver.findElement(By.cssSelector(parentMenu)).click();
 
@@ -31,8 +31,13 @@ public class HomeworkSolutionPart1 {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(parentMenu + secondLevelMenu)));
         driver.findElement(By.cssSelector(parentMenu + secondLevelMenu)).click();
 
-        String thirdLevelMenu = " > .children > :nth-child(3)";
+        String thirdLevelMenu = " > .children > :nth-child(1)";
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(parentMenu + secondLevelMenu + thirdLevelMenu)));
         driver.findElement(By.cssSelector(parentMenu + secondLevelMenu + thirdLevelMenu)).click();
+
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("toolbar h3"), "Countries"));
+        System.out.println(driver.findElement(By.cssSelector("toolbar h3")).getText());
+        System.out.println(driver.getCurrentUrl());
+
     }
 }
