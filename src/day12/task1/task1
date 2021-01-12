@@ -1,2 +1,2 @@
-        driver.get("https://demoqa.com/browser-windows");
-        // click on the new window button, and verify that in new window you have text: "This is a sample page"
+driver.get("https://demoqa.com/browser-windows");
+// click on the new window button, and verify that in new window you have text: "This is a sample page"
