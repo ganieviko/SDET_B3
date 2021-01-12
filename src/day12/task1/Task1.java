@@ -2,6 +2,7 @@ package day12.task1;
 
 import day12.MyConstants;
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +12,8 @@ import static org.junit.Assert.*;
 import java.util.Set;
 
 public class Task1 {
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         System.setProperty("webdriver.chrome.driver", MyConstants.DRIVER_PATH);
         WebDriver driver = new ChromeDriver();
         driver.get("https://demoqa.com/browser-windows");
@@ -43,5 +45,10 @@ public class Task1 {
         }
 
         Assert.assertTrue("The element not found", found);
+    }
+
+    @Test
+    public void test2() {
+
     }
 }
