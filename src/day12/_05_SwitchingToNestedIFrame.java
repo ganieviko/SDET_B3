@@ -12,7 +12,6 @@ public class _05_SwitchingToNestedIFrame {
         driver.get("https://chercher.tech/practice/frames");
 
         driver.switchTo().frame("frame1");
-//        WebElement iFrameElement = driver.findElement(By.cssSelector("iframe[src='checkbox.html']"));
         driver.switchTo().frame("frame3");
 
         driver.findElement(By.cssSelector("input[type=checkbox]")).click();
