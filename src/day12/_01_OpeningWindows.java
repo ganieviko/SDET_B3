@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
+import java.util.Set;
 
 public class _01_OpeningWindows {
     public static void main(String[] args) {
@@ -20,5 +21,14 @@ public class _01_OpeningWindows {
         for (WebElement link : links) {
             link.click();
         }
+
+        Set<String> windowHandles = driver.getWindowHandles();
+        for(String handle: windowHandles) {
+            System.out.println(handle);
+        }
+
+//        driver.quit();
+        driver.close();
+
     }
 }
