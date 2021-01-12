@@ -15,5 +15,14 @@ public class _05_SwitchingToNestedIFrame {
         driver.switchTo().frame("frame3");
 
         driver.findElement(By.cssSelector("input[type=checkbox]")).click();
+
+        driver.switchTo().parentFrame();
+        driver.findElement(By.cssSelector("input[type=text]")).sendKeys("Hello");
+
+        driver.switchTo().parentFrame();
+        System.out.println(driver.findElement(By.tagName("h1")).getText());
+
+        driver.switchTo().defaultContent(); // switch to the very top
+
     }
 }
