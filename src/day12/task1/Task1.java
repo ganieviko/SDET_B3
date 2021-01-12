@@ -19,7 +19,6 @@ public class Task1 {
         driver.get("https://demoqa.com/browser-windows");
 
         String originalWindowHandle = driver.getWindowHandle();
-
         driver.findElement(By.id("windowButton")).click();
 
 

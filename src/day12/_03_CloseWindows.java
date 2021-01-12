@@ -39,5 +39,8 @@ public class _03_CloseWindows {
         driver.switchTo().window(orderedWindowHandle.get(1));
         driver.close(); // close only second window
 
+        driver.switchTo().window(orderedWindowHandle.get(2)); // switching focus to another windows
+        driver.findElement(By.cssSelector("a[target=_blank]")); // this will give you an error if you don't switch focus,
+        // because driver does not have focus
     }
 }
