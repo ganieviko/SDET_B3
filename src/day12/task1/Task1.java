@@ -1,13 +1,12 @@
 package day12.task1;
 
 import day12.MyConstants;
-import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import static org.junit.Assert.*;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.Set;
 
@@ -43,7 +42,7 @@ public class Task1 {
             found = false;
         }
 
-        Assert.assertTrue("The element not found", found);
+        Assert.assertTrue(found, "The element not found");
     }
 
     @Test
